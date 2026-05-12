@@ -52,7 +52,7 @@ function App() {
         {/* Cards */}
         <section
           aria-label="Sustainability platforms"
-          className="mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 gap-5 md:grid-cols-3 lg:max-w-[1240px] xl:max-w-[1340px]"
+          className="mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:max-w-[1240px] xl:max-w-[1340px]"
         >
           <PlatformCard
             title="Sustainability Marketplace"
