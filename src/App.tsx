@@ -35,7 +35,7 @@ function App() {
 
         {/* Hero */}
         <section className="mx-auto mt-6 max-w-5xl text-center">
-          <h1 className="mx-auto max-w-5xl text-[2.2rem] font-semibold tracking-tight leading-[1.03] text-foreground sm:text-[3.4rem] lg:text-[4.2rem]">
+          <h1 className="mx-auto max-w-5xl text-[2.2rem] font-semibold tracking-tight leading-[1.03] text-foreground sm:text-[3.4rem] lg:text-[3.8rem]">
             Access{" "}
             <span className="gradient-text font-bold">
               Sustainability
