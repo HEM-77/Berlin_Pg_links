@@ -6,8 +6,8 @@ function App() {
   const insightsUrl = import.meta.env.VITE_INSIGHTS_URL as string | undefined
 
   return (
-    <div className="min-h-screen bg-background page-ambient flex flex-col overflow-hidden">
-      <main className="flex-1 mx-auto w-full max-w-[1280px] px-4 py-6 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-background page-ambient flex flex-col">
+      <main className="flex flex-1 flex-col mx-auto w-full max-w-[1280px] px-4 py-6 sm:px-6 lg:px-8">
 
         {/* Header */}
         <header className="flex flex-col items-center">
@@ -34,8 +34,8 @@ function App() {
         </header>
 
         {/* Hero */}
-        <section className="mx-auto mt-6 max-w-5xl text-center">
-          <h1 className="mx-auto max-w-5xl text-[2.2rem] font-semibold tracking-tight leading-[1.03] text-foreground sm:text-[3.4rem] lg:text-[3.8rem]">
+        <section className="mx-auto mt-10 max-w-5xl text-center">
+          <h1 className="mx-auto max-w-5xl text-[2.4rem] font-semibold tracking-tight leading-[1.05] text-foreground sm:text-[3.8rem] lg:text-[4.2rem]">
             Access{" "}
             <span className="gradient-text font-bold">
               Sustainability
@@ -43,7 +43,7 @@ function App() {
             Platforms
           </h1>
 
-          <p className="mx-auto mt-3 max-w-3xl text-[15px] leading-[1.7] text-muted-foreground sm:text-[1.05rem]">
+          <p className="mx-auto mt-5 max-w-3xl text-[15px] leading-[1.8] text-muted-foreground sm:text-[1.08rem]">
             Centralized access to sustainability marketplace tools, ESG supplier
             assessment systems, and sustainability intelligence platforms.
           </p>
@@ -52,7 +52,7 @@ function App() {
         {/* Cards */}
         <section
           aria-label="Sustainability platforms"
-          className="mx-auto mt-8 grid w-full max-w-6xl grid-cols-1 gap-4 md:grid-cols-3"
+          className="mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 gap-5 md:grid-cols-3"
         >
           <PlatformCard
             title="Sustainability Marketplace"
@@ -77,7 +77,7 @@ function App() {
         </section>
 
         {/* Footer */}
-        <footer className="mt-10 border-t border-border/60 pt-5">
+        <footer className="mt-auto pt-10 border-t border-border/60">
           <div className="flex flex-col gap-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
             <p>© 2026 Packgine. All rights reserved.</p>
 
@@ -87,6 +87,7 @@ function App() {
             </div>
           </div>
         </footer>
+
       </main>
     </div>
   )
