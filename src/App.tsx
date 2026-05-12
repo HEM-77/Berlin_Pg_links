@@ -7,35 +7,35 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background page-ambient flex flex-col overflow-hidden">
-      <main className="flex-1 mx-auto w-full max-w-7xl px-6 py-8 sm:px-8 sm:py-10">
-        
+      <main className="flex-1 mx-auto w-full max-w-[1280px] px-4 py-6 sm:px-6 lg:px-8">
+
         {/* Header */}
         <header className="flex flex-col items-center">
           <img
             src="/berlin-logo.jpeg"
             alt="Berlin Packaging"
-            className="h-20 w-auto sm:h-24"
+            className="h-16 w-auto sm:h-20"
           />
 
           {/* Branding */}
-          <p className="mt-4 text-center text-[15px] font-semibold tracking-[0.02em] text-muted-foreground sm:text-[1.15rem]">
+          <p className="mt-3 text-center text-[14px] font-semibold tracking-[0.01em] text-muted-foreground sm:text-[1rem]">
             Berlin Packaging
-            <span className="mx-3 text-border">|</span>
+            <span className="mx-2 text-border">|</span>
             Sustainability Tools
           </p>
 
           {/* Enterprise Badge */}
-          <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-border/70 bg-white/90 px-5 py-2 shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md">
+          <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-border/70 bg-white/90 px-4 py-1.5 shadow-sm backdrop-blur-sm">
             <span className="size-2 rounded-full bg-accent status-pulse" />
-            <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
               Enterprise Platform
             </span>
           </div>
         </header>
 
-        {/* Hero Section */}
-        <section className="mx-auto mt-8 max-w-5xl text-center">
-          <h1 className="text-[2.7rem] font-semibold tracking-tight leading-[1.02] text-foreground sm:text-[4rem] lg:text-[4.5rem]">
+        {/* Hero */}
+        <section className="mx-auto mt-6 max-w-5xl text-center">
+          <h1 className="mx-auto max-w-5xl text-[2.2rem] font-semibold tracking-tight leading-[1.03] text-foreground sm:text-[3.4rem] lg:text-[4.2rem]">
             Access{" "}
             <span className="gradient-text font-bold">
               Sustainability
@@ -43,7 +43,7 @@ function App() {
             Platforms
           </h1>
 
-          <p className="mx-auto mt-4 max-w-3xl text-[1rem] leading-[1.8] text-muted-foreground sm:text-[1.18rem]">
+          <p className="mx-auto mt-3 max-w-3xl text-[15px] leading-[1.7] text-muted-foreground sm:text-[1.05rem]">
             Centralized access to sustainability marketplace tools, ESG supplier
             assessment systems, and sustainability intelligence platforms.
           </p>
@@ -52,7 +52,7 @@ function App() {
         {/* Cards */}
         <section
           aria-label="Sustainability platforms"
-          className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-5 md:grid-cols-3"
+          className="mx-auto mt-8 grid w-full max-w-6xl grid-cols-1 gap-4 md:grid-cols-3"
         >
           <PlatformCard
             title="Sustainability Marketplace"
@@ -77,8 +77,8 @@ function App() {
         </section>
 
         {/* Footer */}
-        <footer className="mt-12 border-t border-border/60 pt-5">
-          <div className="flex items-center justify-between text-sm text-muted-foreground">
+        <footer className="mt-10 border-t border-border/60 pt-5">
+          <div className="flex flex-col gap-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
             <p>© 2026 Packgine. All rights reserved.</p>
 
             <div className="flex items-center gap-2">
