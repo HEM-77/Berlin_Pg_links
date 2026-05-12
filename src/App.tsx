@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background page-ambient flex flex-col">
-      <main className="flex flex-1 flex-col mx-auto w-full max-w-[1280px] px-4 py-6 sm:px-6 lg:px-8">
+      <main className="flex flex-1 flex-col mx-auto w-full max-w-[1440px] px-4 py-6 sm:px-6 lg:px-6">
 
         {/* Header */}
         <header className="flex flex-col items-center">
@@ -52,7 +52,7 @@ function App() {
         {/* Cards */}
         <section
           aria-label="Sustainability platforms"
-          className="mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 gap-5 md:grid-cols-3"
+          className="mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 gap-5 md:grid-cols-3 lg:max-w-[1240px] xl:max-w-[1340px]"
         >
           <PlatformCard
             title="Sustainability Marketplace"
@@ -77,7 +77,7 @@ function App() {
         </section>
 
         {/* Footer */}
-        <footer className="mt-auto pt-10 border-t border-border/60">
+        <footer className="mt-8 border-t border-border/60 pt-5 lg:mt-9">
           <div className="flex flex-col gap-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
             <p>© 2026 Packgine. All rights reserved.</p>
 
