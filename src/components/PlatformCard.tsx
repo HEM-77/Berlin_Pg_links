@@ -22,7 +22,7 @@ export function PlatformCard({
       type="button"
       onClick={handleClick}
       disabled={!href}
-      className="card-hover group relative flex min-h-[240px] w-full flex-col overflow-hidden rounded-2xl border border-border bg-surface p-6 text-left shadow-[0_2px_10px_rgba(0,0,0,0.04)] transition-all duration-300 ease-out hover:-translate-y-2 hover:border-border-subtle hover:shadow-[0_12px_32px_rgba(211,32,39,0.10)] focus:outline-none disabled:cursor-default disabled:opacity-70"
+      className="card-hover group relative flex min-h-[220px] w-full min-w-0 flex-col overflow-hidden rounded-2xl border border-border bg-surface p-6 text-left shadow-[0_2px_10px_rgba(0,0,0,0.04)] transition-all duration-300 ease-out hover:-translate-y-2 hover:border-border-subtle hover:shadow-[0_12px_32px_rgba(211,32,39,0.10)] focus:outline-none disabled:cursor-default disabled:opacity-70 lg:min-h-[232px] xl:p-7"
     >
       {/* Animated top line */}
       <div className="card-line" aria-hidden="true" />
@@ -32,24 +32,24 @@ export function PlatformCard({
 
       <div className="relative flex h-full flex-col">
         {/* Title */}
-        <h3 className="text-[1.1rem] font-semibold tracking-tight text-foreground">
+        <h3 className="min-w-0 text-[1.1rem] font-semibold tracking-tight text-foreground">
           {title}
         </h3>
 
         {/* Description */}
-        <p className="mt-3 flex-1 text-[14px] leading-[1.9] text-muted-foreground">
+        <p className="mt-3 min-w-0 flex-1 text-[14px] leading-[1.7] text-muted-foreground">
           {description}
         </p>
 
         {/* CTA */}
-        <div className="mt-5 flex items-center justify-between border-t border-border-subtle pt-4">
-          <span className="text-[14px] font-medium text-foreground transition-colors duration-300 group-hover:text-accent">
+        <div className="mt-5 flex items-center justify-between gap-4 border-t border-border-subtle pt-4">
+          <span className="min-w-0 text-[14px] font-medium text-foreground transition-colors duration-300 group-hover:text-accent">
             {cta}
           </span>
 
           <span
             aria-hidden="true"
-            className="inline-flex size-9 items-center justify-center rounded-full border border-border bg-background text-muted-foreground transition-all duration-300 ease-out group-hover:border-accent group-hover:bg-accent group-hover:text-accent-foreground group-hover:shadow-[0_0_18px_rgba(211,32,39,0.28)]"
+            className="inline-flex size-9 shrink-0 items-center justify-center rounded-full border border-border bg-background text-muted-foreground transition-all duration-300 ease-out group-hover:border-accent group-hover:bg-accent group-hover:text-accent-foreground group-hover:shadow-[0_0_18px_rgba(211,32,39,0.28)]"
           >
             <svg
               width="13"

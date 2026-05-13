@@ -22,6 +22,16 @@
 }
 
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    min-height: 100%;
+  }
+
   html,
   body {
     background-color: var(--color-background);
@@ -29,6 +39,21 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100%;
+    margin: 0;
+    overflow-x: clip;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  img,
+  svg {
+    display: block;
   }
 
   ::selection {
@@ -58,6 +83,14 @@
     radial-gradient(ellipse 80% 50% at 50% -10%, rgba(211, 32, 39, 0.04), transparent 50%),
     radial-gradient(ellipse 60% 40% at 80% 60%, rgba(211, 32, 39, 0.02), transparent 40%),
     radial-gradient(ellipse 60% 40% at 20% 80%, rgba(255, 107, 107, 0.015), transparent 40%);
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .platform-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(100%, calc((100% - 1.25rem) / 2));
+  }
 }
 
 /* Premium animated line sweep */

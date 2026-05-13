@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background page-ambient flex flex-col">
-      <main className="flex flex-1 flex-col mx-auto w-full max-w-[1440px] px-4 py-6 sm:px-6 lg:px-6">
+      <main className="relative mx-auto flex min-h-screen w-full min-w-0 flex-col items-center justify-center px-4 py-12 sm:px-6 md:py-16 lg:px-8">
 
         {/* Header */}
         <header className="flex flex-col items-center">
@@ -34,8 +34,8 @@ function App() {
         </header>
 
         {/* Hero */}
-        <section className="mx-auto mt-10 max-w-5xl text-center">
-          <h1 className="mx-auto max-w-5xl text-[2.4rem] font-semibold tracking-tight leading-[1.05] text-foreground sm:text-[3.8rem] lg:text-[4.2rem]">
+        <section className="mx-auto mt-8 w-full max-w-5xl text-center sm:mt-10">
+          <h1 className="mx-auto w-full min-w-0 max-w-5xl text-balance text-[2.15rem] font-semibold tracking-tight leading-[1.05] text-foreground sm:text-[3.8rem] lg:text-[4.2rem]">
             Access{" "}
             <span className="gradient-text font-bold">
               Sustainability
@@ -43,7 +43,7 @@ function App() {
             Platforms
           </h1>
 
-          <p className="mx-auto mt-5 max-w-3xl text-[15px] leading-[1.8] text-muted-foreground sm:text-[1.08rem]">
+          <p className="mx-auto mt-5 w-full min-w-0 max-w-3xl text-balance text-[15px] leading-[1.8] text-muted-foreground sm:text-[1.08rem]">
             Centralized access to sustainability marketplace tools, ESG supplier
             assessment systems, and sustainability intelligence platforms.
           </p>
@@ -52,7 +52,7 @@ function App() {
         {/* Cards */}
         <section
           aria-label="Sustainability platforms"
-          className="mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:max-w-[1240px] xl:max-w-[1340px]"
+          className="platform-grid mx-auto mt-10 grid w-full min-w-0 max-w-5xl grid-cols-1 gap-5 md:grid-cols-2 lg:mt-12 lg:grid-cols-3 lg:gap-6 xl:max-w-6xl xl:gap-8"
         >
           <PlatformCard
             title="Sustainability Marketplace"
@@ -77,9 +77,9 @@ function App() {
         </section>
 
         {/* Footer */}
-        <footer className="mt-8 border-t border-border/60 pt-5 lg:mt-9">
+        <footer className="mx-auto mt-10 w-full min-w-0 max-w-5xl border-t border-border/60 pt-5 lg:mt-12 xl:max-w-6xl">
           <div className="flex flex-col gap-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-            <p>© 2026 Packgine. All rights reserved.</p>
+            <p>&copy; 2026 Packgine. All rights reserved.</p>
 
             <div className="flex items-center gap-2">
               <span className="size-2 rounded-full bg-success status-pulse" />
